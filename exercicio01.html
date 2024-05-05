@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula|#01</title>
+    
+    <style>
+        body{
+            background-color: rgba(0, 160, 253, 0.548);
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            
+        }  
+
+        .box-nav{
+            background-color: rgb(255, 255, 255);
+            padding: 5px;
+            border-radius: 20px;
+        }
+        
+        .box{
+            background: rgba(0, 0, 0, 0.459);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 15px;
+            border-radius: 15px;
+            color: white;
+        }
+
+        input{
+            padding: 10px;
+            border: none;
+            border-radius: 15px;
+            outline: none;
+            font-size: 15px;
+            width: 50%; 
+            text-align: center;   
+        }
+        
+        
+        button{
+            padding: 10px;
+            border: none;
+            outline: none;
+            width: 50%;
+            background: rgba(32, 85, 231, 0.438);
+            color: white;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+        
+        button:hover{
+            background: cornflowerblue;
+            
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="box-nav">
+        <h1>EXERCÍCIO #01</h1>
+        <h2>André Júlio</h2>
+    </div>
+
+    <div class="box">
+        <p>Leia o valor de um input e mostre em um alert.</p>
+        <input type="text" id="numero" placeholder="Digite um valor">
+        
+        <br><br><!--essa tag serve para pular/quebrar linhas-->
+
+        <button onclick="go()">Enviar</button>
+
+    </div>
+
+</body>
+<script>
+    function go()
+
+    {
+           var ValueInput = document.getElementById('numero').value;
+            alert(ValueInput);
+    }
+
+
+</script>
+</html>
